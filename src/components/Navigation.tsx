@@ -1,5 +1,5 @@
 
-import { Building2, Home, Info, Mail } from "lucide-react";
+import { Building2, Home, Building, Users, Briefcase, MapPin, Calendar, Sofa } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   Sidebar,
@@ -11,23 +11,34 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarHeader,
+  SidebarFooter,
 } from "@/components/ui/sidebar";
 
-const navigationItems = [
+const apartmentCategories = [
   {
-    title: "Apartments",
-    url: "/",
+    title: "Privat",
+    url: "/private",
     icon: Home,
   },
   {
-    title: "About Us",
-    url: "/about",
-    icon: Info,
+    title: "Företag",
+    url: "/business",
+    icon: Briefcase,
   },
   {
-    title: "Contact",
-    url: "/contact",
-    icon: Mail,
+    title: "Möblerad",
+    url: "/furnished",
+    icon: Sofa,
+  },
+  {
+    title: "Omöblerad",
+    url: "/unfurnished",
+    icon: Building,
+  },
+  {
+    title: "Långtids / Korttids",
+    url: "/rental-terms",
+    icon: Calendar,
   },
 ];
 
@@ -38,16 +49,20 @@ const Navigation = () => {
         <div className="flex items-center p-2">
           <Link to="/" className="flex items-center">
             <Building2 className="h-8 w-8 text-blue-500" />
-            <span className="ml-2 text-xl font-semibold">Haven Homes</span>
+            <div className="ml-2">
+              <div className="text-sm font-semibold">UTHYRNING AV LÄGENHETER</div>
+              <div className="text-xs text-gray-600">Norrköping</div>
+            </div>
           </Link>
         </div>
       </SidebarHeader>
+      
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          <SidebarGroupLabel>LÄGENHETER</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {navigationItems.map((item) => (
+              {apartmentCategories.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <Link to={item.url}>
@@ -61,6 +76,19 @@ const Navigation = () => {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
+
+      <SidebarFooter>
+        <div className="p-4 border-t">
+          <div className="text-sm font-semibold mb-2">KM3 Logi AB</div>
+          <div className="text-xs text-gray-600 flex items-start">
+            <MapPin className="h-3 w-3 mt-0.5 mr-1 flex-shrink-0" />
+            <div>
+              <div>Koppargatan 3</div>
+              <div>Norrköping</div>
+            </div>
+          </div>
+        </div>
+      </SidebarFooter>
     </Sidebar>
   );
 };
