@@ -1,34 +1,12 @@
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import Navigation from "@/components/Navigation";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const backgroundImages = [
-  "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-  "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-  "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-  "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-  "/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png"
-];
-
 const Index = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // Effect to rotate background images
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(prevIndex => 
-        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="min-h-screen flex w-full bg-white">
       <Navigation />
@@ -37,18 +15,13 @@ const Index = () => {
           <SidebarTrigger />
         </div>
         
-        {/* Hero Section with Rotating Background */}
+        {/* Hero Section with Static Flower Background */}
         <section className="relative h-[80vh] bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
-          {/* Rotating background image with transition effect */}
-          {backgroundImages.map((image, index) => (
-            <div 
-              key={index}
-              className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
-                index === currentImageIndex ? "opacity-20" : "opacity-0"
-              }`}
-              style={{ backgroundImage: `url('${image}')` }}
-            ></div>
-          ))}
+          {/* Static flower background image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-20"
+            style={{ backgroundImage: `url('/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png')` }}
+          ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Find Your Dream Home</h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl">
