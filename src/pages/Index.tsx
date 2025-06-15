@@ -17,13 +17,13 @@ const Index = () => {
         
         {/* Hero Section with Static Flower Background */}
         <section className="relative h-[80vh] bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
-          {/* Static flower background image */}
+          {/* Static flower background image with better clarity */}
           <div 
-            className="absolute inset-0 bg-cover bg-center opacity-20"
+            className="absolute inset-0 bg-cover bg-center opacity-60"
             style={{ backgroundImage: `url('/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png')` }}
           ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Find Your Dream Home</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi AB</h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl">
               Discover the perfect apartment with Haven Homes, providing exceptional living spaces for every lifestyle.
             </p>
