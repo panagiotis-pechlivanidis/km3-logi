@@ -11,7 +11,8 @@ const backgroundImages = [
   "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
   "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
   "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+  "/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png"
 ];
 
 const Index = () => {
