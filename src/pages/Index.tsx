@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -21,7 +22,7 @@ const Index = () => {
             className="absolute inset-0 bg-cover bg-center opacity-60"
             style={{ backgroundImage: `url('/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png')` }}
           ></div>
-          <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10">
+          <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi AB</h1>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/about">
