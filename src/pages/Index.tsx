@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -24,9 +23,6 @@ const Index = () => {
           ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi AB</h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl">
-              Discover the perfect apartment with Haven Homes, providing exceptional living spaces for every lifestyle.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/about">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
