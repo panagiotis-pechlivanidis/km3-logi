@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -24,12 +23,7 @@ const Index = () => {
           ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi AB</h1>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/about">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+            <div className="flex justify-center">
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50">
                   Contact Us
