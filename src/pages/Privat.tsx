@@ -1,0 +1,118 @@
+
+import React from "react";
+import Navigation from "@/components/Navigation";
+import { SidebarTrigger } from "@/components/ui/sidebar";
+import ApartmentCard from "@/components/ApartmentCard";
+
+const Privat = () => {
+  const privateApartments = [
+    {
+      title: "Cozy Downtown Studio",
+      price: "8,500 kr/month",
+      beds: 1,
+      baths: 1,
+      sqft: 45,
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+    },
+    {
+      title: "Modern City Apartment",
+      price: "12,000 kr/month", 
+      beds: 2,
+      baths: 1,
+      sqft: 65,
+      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+    },
+    {
+      title: "Bright Central Flat",
+      price: "10,500 kr/month",
+      beds: 2,
+      baths: 2,
+      sqft: 55,
+      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840"
+    },
+    {
+      title: "Spacious Family Home",
+      price: "15,000 kr/month",
+      beds: 3,
+      baths: 2,
+      sqft: 85,
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+    },
+    {
+      title: "Charming Old Town Loft",
+      price: "11,500 kr/month",
+      beds: 1,
+      baths: 1,
+      sqft: 50,
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    },
+    {
+      title: "Executive Penthouse",
+      price: "18,000 kr/month",
+      beds: 3,
+      baths: 3,
+      sqft: 95,
+      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen flex w-full bg-white">
+      <Navigation />
+      <main className="flex-1">
+        <div className="p-4">
+          <SidebarTrigger />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="mb-8">
+            <h1 className="text-4xl font-bold mb-4">Private Apartments</h1>
+            <p className="text-gray-600 text-lg">
+              Discover our selection of private rental apartments in Norrköping. 
+              Perfect for individuals and families looking for quality housing solutions.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {privateApartments.map((apartment, index) => (
+              <ApartmentCard
+                key={index}
+                title={apartment.title}
+                price={apartment.price}
+                beds={apartment.beds}
+                baths={apartment.baths}
+                sqft={apartment.sqft}
+                image={apartment.image}
+              />
+            ))}
+          </div>
+          
+          <div className="mt-12 bg-gray-50 rounded-lg p-8">
+            <h2 className="text-2xl font-semibold mb-4">About Private Rentals</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-medium mb-2">What's Included</h3>
+                <ul className="text-gray-600 space-y-1">
+                  <li>• Fully equipped kitchen</li>
+                  <li>• High-speed internet</li>
+                  <li>• Utilities included</li>
+                  <li>• 24/7 maintenance support</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-medium mb-2">Requirements</h3>
+                <ul className="text-gray-600 space-y-1">
+                  <li>• Monthly income verification</li>
+                  <li>• Security deposit required</li>
+                  <li>• Minimum 6-month lease</li>
+                  <li>• References required</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default Privat;
