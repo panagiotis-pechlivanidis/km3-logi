@@ -1,5 +1,4 @@
 
-
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -16,50 +15,54 @@ const Contact = () => {
           <SidebarTrigger />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
+          <h1 className="text-4xl font-bold mb-8">Kontakta Oss</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <h2 className="text-2xl font-semibold">Send us a message</h2>
+                <h2 className="text-2xl font-semibold">Skicka oss ett meddelande</h2>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4">
                   <div>
-                    <Input placeholder="Your Name" />
+                    <Input placeholder="Ditt Namn" />
                   </div>
                   <div>
-                    <Input type="email" placeholder="Your Email" />
+                    <Input type="email" placeholder="Din E-post" />
                   </div>
                   <div>
-                    <Input placeholder="Subject" />
+                    <Input placeholder="Ämne" />
                   </div>
                   <div>
-                    <Textarea placeholder="Your Message" className="min-h-[150px]" />
+                    <Textarea placeholder="Ditt Meddelande" className="min-h-[150px]" />
                   </div>
-                  <Button className="w-full">Send Message</Button>
+                  <Button className="w-full">Skicka Meddelande</Button>
                 </form>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <h2 className="text-2xl font-semibold">Our Office</h2>
+                <h2 className="text-2xl font-semibold">Kontaktuppgifter</h2>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <p className="text-gray-600">
-                    123 Real Estate Avenue<br />
-                    New York, NY 10001
-                  </p>
-                  <p className="text-gray-600">
-                    Phone: (555) 123-4567<br />
-                    Email: info@havenhomes.com
-                  </p>
-                  <p className="text-gray-600">
-                    <strong>Business Hours:</strong><br />
-                    Monday - Friday: 9:00 AM - 6:00 PM<br />
-                    Saturday: 10:00 AM - 4:00 PM<br />
-                    Sunday: Closed
-                  </p>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Vår adress</h3>
+                    <p className="text-gray-600">
+                      Koppargatan 3, 602 23 Norrköping
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Maila oss</h3>
+                    <p className="text-gray-600">
+                      caroline@km3logi.se
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Ring oss</h3>
+                    <p className="text-gray-600">
+                      073-812 23 33
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -71,4 +74,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
