@@ -97,7 +97,10 @@ const Index = () => {
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6">About Haven Homes</h2>
                 <p className="text-gray-700 mb-6">
-                  At Haven Homes, we specialize in finding you the perfect living space. With years of experience in the housing market, our team is dedicated to providing exceptional service and support throughout your journey to finding your dream home.
+                  Vi har företagslägenheter för uthyrning, de är fullt möblerade och redo att användas direkt.
+                </p>
+                <p className="text-gray-700 mb-6">
+                  Du som kund kan hyra hos oss den perioden som passar dig, det kan vara kortare visiter eller längre perioder.
                 </p>
                 <Link to="/about">
                   <Button variant="link" className="text-blue-600 p-0 flex items-center">
