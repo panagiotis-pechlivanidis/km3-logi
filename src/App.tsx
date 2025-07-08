@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privat from "./pages/Privat";
+import Foretag from "./pages/Foretag";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/private" element={<Privat />} />
+            <Route path="/business" element={<Foretag />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </SidebarProvider>
