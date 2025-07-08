@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -97,11 +98,6 @@ const Index = () => {
                 <p className="text-gray-700 mb-6">
                   Du som kund kan hyra hos oss den perioden som passar dig, det kan vara kortare visiter eller längre perioder.
                 </p>
-                <Link to="/about">
-                  <Button variant="link" className="text-blue-600 p-0 flex items-center">
-                    Learn more about us <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
@@ -143,7 +139,6 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
                 <ul className="space-y-2">
                   <li><Link to="/" className="text-gray-400 hover:text-white">Home</Link></li>
-                  <li><Link to="/about" className="text-gray-400 hover:text-white">About</Link></li>
                   <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
                 </ul>
               </div>
