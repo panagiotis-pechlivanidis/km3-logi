@@ -1,15 +1,18 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex w-full bg-white">
       <Navigation />
       <main className="flex-1">
+        <div className="p-4">
+          <SidebarTrigger />
+        </div>
         {/* Hero Section with Static Flower Background */}
         <section className="relative h-[80vh] bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
           {/* Static flower background image with better clarity */}
