@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privat from "./pages/Privat";
 import Foretag from "./pages/Foretag";
+import Moblerad from "./pages/Moblerad";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/private" element={<Privat />} />
             <Route path="/business" element={<Foretag />} />
+            <Route path="/furnished" element={<Moblerad />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </SidebarProvider>
