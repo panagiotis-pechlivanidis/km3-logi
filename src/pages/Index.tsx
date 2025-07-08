@@ -10,9 +10,11 @@ const Index = () => {
     <div className="min-h-screen flex w-full bg-white">
       <Navigation />
       <main className="flex-1">
-        <div className="p-4">
+        {/* Sidebar trigger positioned absolutely to remove the top bar */}
+        <div className="absolute top-4 left-4 z-50">
           <SidebarTrigger />
         </div>
+        
         {/* Hero Section with Static Flower Background */}
         <section className="relative h-[80vh] bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
           {/* Static flower background image with better clarity */}
