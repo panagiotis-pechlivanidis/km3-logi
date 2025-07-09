@@ -115,21 +115,6 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Call to Action */}
-        <section className="py-16 bg-blue-600 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Find Your New Home?</h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Contact our team today to schedule a viewing or learn more about our available apartments.
-            </p>
-            <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-50 border-white">
-                Contact Us Today
-              </Button>
-            </Link>
-          </div>
-        </section>
-        
         {/* Footer */}
         <footer className="py-12 bg-gray-900 text-white">
           <div className="container mx-auto px-4">
