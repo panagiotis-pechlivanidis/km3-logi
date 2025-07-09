@@ -10,8 +10,8 @@ const Index = () => {
     <div className="min-h-screen flex w-full bg-white">
       <Navigation />
       <main className="flex-1">
-        {/* Sidebar trigger positioned absolutely to remove the top bar */}
-        <div className="absolute top-4 left-4 z-50">
+        {/* Sidebar trigger positioned on the right side of the sidebar */}
+        <div className="absolute top-4 left-64 z-50">
           <SidebarTrigger />
         </div>
         
