@@ -23,7 +23,7 @@ const Index = () => {
             style={{ backgroundImage: `url('/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png')` }}
           ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi AB</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi </h1>
             <div className="flex justify-center">
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50">
@@ -96,7 +96,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="flex flex-col justify-center">
-                <h2 className="text-3xl font-bold mb-6">About KM3 Logi AB</h2>
+                <h2 className="text-3xl font-bold mb-6">About KM3 Logi </h2>
                 <p className="text-gray-700 mb-6">
                   Vi har företagslägenheter för uthyrning, de är fullt möblerade och redo att användas direkt.
                 </p>
@@ -120,7 +120,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-4">Haven Homes</h3>
+                <h3 className="text-xl font-semibold mb-4">KM3 Logi</h3>
                 <p className="text-gray-400">
                   Finding you the perfect place to call home.
                 </p>
@@ -135,15 +135,14 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
                 <address className="text-gray-400 not-italic">
-                  123 Apartment Lane<br />
-                  New York, NY 10001<br />
-                  info@havenhomes.com<br />
-                  (555) 123-4567
+                  Koppargatan 3, 602 23 Norrköping<br />
+                  caroline@km3logi.se<br />
+                  073-812 23 33<br />
                 </address>
               </div>
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-              <p>© {new Date().getFullYear()} Haven Homes. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} KM3 Logi. All rights reserved.</p>
             </div>
           </div>
         </footer>

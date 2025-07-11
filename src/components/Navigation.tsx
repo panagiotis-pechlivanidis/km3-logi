@@ -79,7 +79,7 @@ const Navigation = () => {
 
       <SidebarFooter>
         <div className="p-4 border-t">
-          <div className="text-sm font-semibold mb-2">KM3 Logi AB</div>
+          <div className="text-sm font-semibold mb-2">KM3 Logi </div>
           <div className="text-xs text-gray-600 flex items-start">
             <MapPin className="h-3 w-3 mt-0.5 mr-1 flex-shrink-0" />
             <div>
