@@ -20,7 +20,7 @@ const Index = () => {
           {/* Static flower background image with better clarity */}
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-60"
-            style={{ backgroundImage: `url('/lovable-uploads/5fd1055a-b013-4359-a3e2-e1b8f444e99f.png')` }}
+            style={{ backgroundImage: `url('public/lovable-uploads/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
           ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi </h1>
@@ -122,7 +122,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">KM3 Logi</h3>
                 <p className="text-gray-400">
-                  Finding you the perfect place to call home.
+                  
                 </p>
               </div>
               <div>
