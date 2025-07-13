@@ -8,11 +8,12 @@ interface ApartmentCardProps {
   baths: number;
   sqft: number;
   image: string;
+  onClick?: () => void;
 }
 
-const ApartmentCard = ({ title, price, beds, baths, sqft, image }: ApartmentCardProps) => {
+const ApartmentCard = ({ title, price, beds, baths, sqft, image, onClick }: ApartmentCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+    <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer" onClick={onClick}>
       <CardHeader className="p-0">
         <img
           src={image}
