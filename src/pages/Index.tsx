@@ -21,7 +21,7 @@ const Index = () => {
           {/* Static flower background image with better clarity */}
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-60"
-            style={{ backgroundImage: `url('public/lovable-uploads/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
+            style={{ backgroundImage: `url('public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
           ></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi </h1>

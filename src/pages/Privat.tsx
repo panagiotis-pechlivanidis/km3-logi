@@ -15,12 +15,11 @@ const Privat = () => {
       beds: 1,
       baths: 1,
       sqft: 45,
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      image: "/public/images/apt_6390ada7ecb67.avif",
       images: [
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+        "/public/images/apt_6390ada7ecb67.avif",
+        "/public/images/apt_6390aeb36fc9b.avif",
+        "/public/images/apt_6390aefb2971b.avif",
       ]
     },
     {
