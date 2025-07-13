@@ -1,10 +1,14 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import ApartmentCard from "@/components/ApartmentCard";
+import ApartmentModal from "@/components/ApartmentModal";
 
 const Moblerad = () => {
+  const [selectedApartment, setSelectedApartment] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const furnishedApartments = [
     {
       title: "Fully Furnished Studio",
@@ -12,7 +16,13 @@ const Moblerad = () => {
       beds: 1,
       baths: 1,
       sqft: 45,
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      images: [
+        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+      ]
     },
     {
       title: "Modern Furnished Apartment", 
@@ -20,7 +30,13 @@ const Moblerad = () => {
       beds: 2,
       baths: 1,
       sqft: 65,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+      images: [
+        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+      ]
     },
     {
       title: "Cozy Furnished Flat",
@@ -28,7 +44,13 @@ const Moblerad = () => {
       beds: 2,
       baths: 2,
       sqft: 55,
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840"
+      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840",
+      images: [
+        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+        "https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+      ]
     },
     {
       title: "Spacious Furnished Home",
@@ -36,7 +58,13 @@ const Moblerad = () => {
       beds: 3,
       baths: 2,
       sqft: 85,
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+      images: [
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+        "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+      ]
     },
     {
       title: "Designer Furnished Loft",
@@ -44,7 +72,13 @@ const Moblerad = () => {
       beds: 1,
       baths: 1,
       sqft: 50,
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      images: [
+        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
+        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+      ]
     },
     {
       title: "Luxury Furnished Penthouse",
@@ -52,9 +86,25 @@ const Moblerad = () => {
       beds: 3,
       baths: 3,
       sqft: 95,
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
+      images: [
+        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+        "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+      ]
     }
   ];
+
+  const handleApartmentClick = (apartment: any) => {
+    setSelectedApartment(apartment);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedApartment(null);
+  };
 
   return (
     <div className="min-h-screen flex w-full bg-white">
@@ -82,6 +132,7 @@ const Moblerad = () => {
                 baths={apartment.baths}
                 sqft={apartment.sqft}
                 image={apartment.image}
+                onClick={() => handleApartmentClick(apartment)}
               />
             ))}
           </div>
@@ -111,6 +162,12 @@ const Moblerad = () => {
           </div>
         </div>
       </main>
+
+      <ApartmentModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        apartment={selectedApartment}
+      />
     </div>
   );
 };
