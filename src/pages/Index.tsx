@@ -1,17 +1,18 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex w-full bg-white">
       <Navigation />
-      <main className="flex-1">
-        {/* Sidebar trigger positioned on the right side of the sidebar */}
-        <div className="absolute top-4 left-64 z-50">
+      <main className="flex-1 relative">
+        {/* Sidebar trigger positioned to follow the sidebar */}
+        <div className="absolute top-4 left-4 z-50 transition-all duration-200 peer-data-[state=collapsed]:left-4 peer-data-[state=expanded]:left-64">
           <SidebarTrigger />
         </div>
         
