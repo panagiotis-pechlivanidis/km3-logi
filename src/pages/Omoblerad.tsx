@@ -4,7 +4,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import ApartmentCard from "@/components/ApartmentCard";
 import ApartmentModal from "@/components/ApartmentModal";
 
-const Privat = () => {
+const Omoblerad = () => {
   const [selectedApartment, setSelectedApartment] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -113,7 +113,7 @@ const Privat = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">Privat Lägenheter</h1>
+            <h1 className="text-4xl font-bold mb-4">Omöblerad Lägenheter</h1>
             <p className="text-gray-600 text-lg">
               Discover our selection of private rental apartments in Norrköping. 
               Perfect for individuals and families looking for quality housing solutions.
@@ -170,4 +170,4 @@ const Privat = () => {
   );
 };
 
-export default Privat;
+export default Omoblerad;

@@ -11,6 +11,8 @@ import Privat from "./pages/Privat";
 import Foretag from "./pages/Foretag";
 import Moblerad from "./pages/Moblerad";
 import NotFound from "./pages/NotFound";
+import Omoblerad from "./pages/Omoblerad";
+import Langtids from "./pages/Langtids";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
             <Route path="/private" element={<Privat />} />
             <Route path="/business" element={<Foretag />} />
             <Route path="/furnished" element={<Moblerad />} />
+            <Route path="/unfurnished" element={<Omoblerad />} />
+            <Route path="/rental-terms" element={<Langtids />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </SidebarProvider>
