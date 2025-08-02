@@ -7,21 +7,22 @@ import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex w-full bg-white">
+    <div className="min-h-screen flex w-full bg-white relative">
+      {/* Full-width background image that spans behind everything */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-60 z-0"
+        style={{ backgroundImage: `url('public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
+      ></div>
+      
       <Navigation />
-      <main className="flex-1 relative">
+      <main className="flex-1 relative z-10">
         {/* Sidebar trigger positioned to follow the sidebar */}
         <div className="absolute top-4 left-4 z-50 transition-all duration-200 peer-data-[state=collapsed]:left-4 peer-data-[state=expanded]:left-64">
           <SidebarTrigger />
         </div>
         
-        {/* Hero Section with Static Flower Background */}
-        <section className="relative h-[80vh] bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
-          {/* Static flower background image with better clarity */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center opacity-60"
-            style={{ backgroundImage: `url('public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
-          ></div>
+        {/* Hero Section with transparent background */}
+        <section className="relative h-[80vh] bg-gradient-to-r from-blue-50/30 to-blue-100/30 overflow-hidden">
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi </h1>
             <div className="flex justify-center">
