@@ -45,7 +45,7 @@ const apartmentCategories = [
 const Navigation = () => {
   return (
     <Sidebar className="bg-white/10 backdrop-blur-sm border-r-white/20">
-      <SidebarHeader>
+      <SidebarHeader className="bg-transparent">
         <div className="flex items-center p-2">
           <Link to="/" className="flex items-center">
             <Building2 className="h-8 w-8 text-blue-500" />
@@ -57,7 +57,7 @@ const Navigation = () => {
         </div>
       </SidebarHeader>
       
-      <SidebarContent>
+      <SidebarContent className="bg-transparent">
         <SidebarGroup>
           <SidebarGroupLabel>LÄGENHETER</SidebarGroupLabel>
           <SidebarGroupContent>
@@ -77,8 +77,8 @@ const Navigation = () => {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter>
-        <div className="p-4 border-t">
+      <SidebarFooter className="bg-transparent">
+        <div className="p-4 border-t border-white/20">
           <div className="text-sm font-semibold mb-2">KM3 Logi </div>
           <div className="text-xs text-gray-600 flex items-start">
             <MapPin className="h-3 w-3 mt-0.5 mr-1 flex-shrink-0" />
