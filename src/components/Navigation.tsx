@@ -44,7 +44,7 @@ const apartmentCategories = [
 
 const Navigation = () => {
   return (
-    <Sidebar className="bg-transparent border-r-transparent">
+    <Sidebar className="bg-white/10 backdrop-blur-sm border-r-white/20">
       <SidebarHeader>
         <div className="flex items-center p-2">
           <Link to="/" className="flex items-center">
