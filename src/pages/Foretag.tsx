@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
-import Navigation from "@/components/Navigation";
-import { SidebarTrigger } from "@/components/ui/sidebar";
+import TopNavigation from "@/components/TopNavigation";
 import ApartmentCard from "@/components/ApartmentCard";
 import ApartmentModal from "@/components/ApartmentModal";
 
@@ -107,12 +106,9 @@ const Foretag = () => {
   };
 
   return (
-    <div className="min-h-screen flex w-full bg-white">
-      <Navigation />
-      <main className="flex-1">
-        <div className="p-4">
-          <SidebarTrigger />
-        </div>
+    <div className="min-h-screen w-full bg-white">
+      <TopNavigation />
+      <main>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Företag Lägenheter</h1>
