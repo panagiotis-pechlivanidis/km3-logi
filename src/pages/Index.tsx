@@ -1,32 +1,91 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Navigation from "@/components/Navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Building2, Home, Building, Users, Briefcase, MapPin, Calendar, Sofa } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
+
+const apartmentCategories = [
+  {
+    title: "Privat",
+    url: "/private",
+    icon: Home,
+  },
+  {
+    title: "Företag",
+    url: "/business",
+    icon: Briefcase,
+  },
+  {
+    title: "Möblerad",
+    url: "/furnished",
+    icon: Sofa,
+  },
+  {
+    title: "Omöblerad",
+    url: "/unfurnished",
+    icon: Building,
+  },
+  {
+    title: "Långtids / Korttids",
+    url: "/rental-terms",
+    icon: Calendar,
+  },
+];
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex w-full bg-white">
-      <Navigation />
-      <main className="flex-1 relative">
-        {/* Sidebar trigger positioned to follow the sidebar */}
-        <div className="absolute top-4 left-4 z-50 transition-all duration-200 peer-data-[state=collapsed]:left-4 peer-data-[state=expanded]:left-64">
-          <SidebarTrigger />
-        </div>
-        
-        {/* Hero Section with Static Flower Background */}
+    <div className="min-h-screen w-full bg-white">
+      <main className="relative">
+        {/* Hero Section with Navigation Overlay */}
         <section className="relative h-[80vh] bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
-          {/* Static flower background image with better clarity */}
+          {/* Background image */}
           <div 
-            className="absolute inset-0 bg-cover bg-center opacity-60"
+            className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
           ></div>
+          
+          {/* Navigation overlay on the left */}
+          <div className="absolute left-8 top-8 z-20 text-white">
+            <div className="mb-8">
+              <Link to="/" className="flex items-center mb-2">
+                <Building2 className="h-8 w-8 text-white" />
+                <div className="ml-2">
+                  <div className="text-lg font-bold text-white">KM3 Logi</div>
+                  <div className="text-sm text-white/80">UTHYRNING AV LÄGENHETER</div>
+                </div>
+              </Link>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="text-lg font-semibold text-white mb-4">LÄGENHETER</div>
+              {apartmentCategories.map((item) => (
+                <Link 
+                  key={item.title} 
+                  to={item.url}
+                  className="flex items-center text-white hover:text-white/80 transition-colors duration-200 text-lg font-medium"
+                >
+                  <item.icon className="h-5 w-5 mr-3" />
+                  <span>{item.title}</span>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="mt-12 pt-8 border-t border-white/20">
+              <div className="text-sm text-white/80 flex items-start">
+                <MapPin className="h-4 w-4 mt-0.5 mr-2 flex-shrink-0" />
+                <div>
+                  <div>Koppargatan 3</div>
+                  <div>Norrköping</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Main hero content */}
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">KM3 Logi </h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">KM3 Logi</h1>
             <div className="flex justify-center">
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-gray-900 bg-white/10 backdrop-blur-sm">
                   Contact Us
                 </Button>
               </Link>
