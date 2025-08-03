@@ -7,7 +7,7 @@ import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex w-full bg-cover bg-center" style={{ backgroundImage: `url('public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}>
+    <div className="min-h-screen flex w-full bg-white">
       <Navigation />
       <main className="flex-1 relative">
         {/* Sidebar trigger positioned to follow the sidebar */}
