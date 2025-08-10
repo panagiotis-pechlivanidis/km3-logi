@@ -82,10 +82,10 @@ const Index = () => {
           
           {/* Main hero content */}
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">KM3 Logi</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">KM3 Logi</h1>
             <div className="flex justify-center">
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-gray-900 bg-white/10 backdrop-blur-sm">
+                <Button variant="outline" size="lg" className="text-sm sm:text-base border-white text-white hover:bg-white hover:text-gray-900 bg-white/10 backdrop-blur-sm">
                   Contact Us
                 </Button>
               </Link>
