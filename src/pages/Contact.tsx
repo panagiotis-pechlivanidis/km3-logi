@@ -1,19 +1,15 @@
 
-import Navigation from "@/components/Navigation";
+import SimpleNavigation from "@/components/SimpleNavigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex w-full bg-white">
-      <Navigation />
-      <main className="flex-1">
-        <div className="p-4">
-          <SidebarTrigger />
-        </div>
+    <div className="min-h-screen bg-white">
+      <SimpleNavigation />
+      <main>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h1 className="text-4xl font-bold mb-8">Kontakta Oss</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
