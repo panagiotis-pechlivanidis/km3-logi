@@ -37,8 +37,7 @@ const SimpleNavigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center">
-            <Building2 className="h-8 w-8 text-blue-500" />
-            <div className="ml-2">
+            <div>
               <div className="text-lg font-bold">KM3 Logi</div>
               <div className="text-xs text-gray-600">UTHYRNING AV LÄGENHETER</div>
             </div>
