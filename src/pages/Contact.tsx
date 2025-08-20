@@ -4,8 +4,60 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Meddelande skickat!",
+        description: "Tack för ditt meddelande. Vi återkommer så snart som möjligt.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Fel",
+        description: "Något gick fel när meddelandet skickades. Försök igen.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <SimpleNavigation />
@@ -18,20 +70,48 @@ const Contact = () => {
                 <h2 className="text-2xl font-semibold">Skicka oss ett meddelande</h2>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <Input placeholder="Ditt Namn" />
+                    <Input 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      placeholder="Ditt Namn" 
+                      required 
+                    />
                   </div>
                   <div>
-                    <Input type="email" placeholder="Din E-post" />
+                    <Input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="Din E-post" 
+                      required 
+                    />
                   </div>
                   <div>
-                    <Input placeholder="Ämne" />
+                    <Input 
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
+                      placeholder="Ämne" 
+                      required 
+                    />
                   </div>
                   <div>
-                    <Textarea placeholder="Ditt Meddelande" className="min-h-[150px]" />
+                    <Textarea 
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      placeholder="Ditt Meddelande" 
+                      className="min-h-[150px]" 
+                      required 
+                    />
                   </div>
-                  <Button className="w-full">Skicka Meddelande</Button>
+                  <Button type="submit" className="w-full" disabled={isLoading}>
+                    {isLoading ? "Skickar..." : "Skicka Meddelande"}
+                  </Button>
                 </form>
               </CardContent>
             </Card>
