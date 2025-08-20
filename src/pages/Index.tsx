@@ -47,8 +47,7 @@ const Index = () => {
           <div className="absolute left-8 top-8 z-20 text-white">
             <div className="mb-8">
               <Link to="/" className="flex items-center mb-2">
-                <Building2 className="h-8 w-8 text-white" />
-                <div className="ml-2">
+                <div>
                   <div className="text-lg font-bold text-white">KM3 Logi</div>
                   <div className="text-sm text-white/80">UTHYRNING AV LÄGENHETER</div>
                 </div>
