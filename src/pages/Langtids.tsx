@@ -49,48 +49,6 @@ const Langtids = () => {
         "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
       ]
     },
-    {
-      title: "Spacious Family Home",
-      price: "15,000 kr/month",
-      beds: 3,
-      baths: 2,
-      sqft: 85,
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-      images: [
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-      ]
-    },
-    {
-      title: "Charming Old Town Loft",
-      price: "11,500 kr/month",
-      beds: 1,
-      baths: 1,
-      sqft: 50,
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      images: [
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
-      ]
-    },
-    {
-      title: "Executive Penthouse",
-      price: "18,000 kr/month",
-      beds: 3,
-      baths: 3,
-      sqft: 95,
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-      images: [
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-      ]
-    }
   ];
 
   const handleApartmentClick = (apartment: any) => {

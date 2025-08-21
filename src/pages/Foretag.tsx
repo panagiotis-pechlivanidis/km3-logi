@@ -51,48 +51,6 @@ const Foretag = () => {
         "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
       ]
     },
-    {
-      title: "Modern Corporate Flat",
-      price: "22,000 kr/month",
-      beds: 2,
-      baths: 1,
-      sqft: 75,
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-      images: [
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-      ]
-    },
-    {
-      title: "Luxury Business Apartment",
-      price: "28,500 kr/month",
-      beds: 2,
-      baths: 2,
-      sqft: 95,
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-      images: [
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-      ]
-    },
-    {
-      title: "Corporate Penthouse Suite",
-      price: "45,000 kr/month",
-      beds: 4,
-      baths: 3,
-      sqft: 150,
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      images: [
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-      ]
-    }
   ];
 
   const handleApartmentClick = (apartment: any) => {
