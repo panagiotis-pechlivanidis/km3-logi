@@ -132,7 +132,6 @@ const Privat = () => {
                   <li>• Fullt utrustat kök</li>
                   <li>• Höghastighetsinternet</li>
                   <li>• Alla avgifter inkluderade</li>
-                  <li>• 24/7 underhållssupport</li>
                 </ul>
               </div>
               <div>
