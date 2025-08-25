@@ -91,6 +91,39 @@ const Moblerad = () => {
             ))}
           </div>
           
+          <div className="mt-12 mb-12 bg-gray-50 rounded-lg p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Möblerade lägenheter i Norrköping</h2>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-600 mb-6">
+                    För dig som vill undvika krångel med möbler och inredning erbjuder vi möblerade lägenheter i Norrköping.
+                    Här är allt på plats redan från start – från säng och soffa till köksutrustning. Perfekt för dig som vill flytta in direkt.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold mb-4">Passar särskilt bra för:</h3>
+                  <ul className="text-gray-600 space-y-2 mb-6">
+                    <li>• Studenter som behöver en snabb bostadslösning</li>
+                    <li>• Företag som ordnar boende för anställda</li>
+                    <li>• Privatpersoner som vill prova på att bo i Norrköping en period</li>
+                  </ul>
+                  
+                  <p className="text-gray-600">
+                    Att hyra en möblerad lägenhet gör vardagen enkel och bekväm, samtidigt som du får ett hem med allt som behövs.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:pl-8">
+                <img 
+                  src="/lovable-uploads/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  alt="Modern apartment building in Norrköping" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+
           <div className="mt-12 bg-gray-50 rounded-lg p-8">
             <h2 className="text-2xl font-semibold mb-4">Om Möblerade Lägenheter</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

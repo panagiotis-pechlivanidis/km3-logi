@@ -91,6 +91,40 @@ const Foretag = () => {
             ))}
           </div>
           
+          <div className="mt-12 mb-12 bg-gray-50 rounded-lg p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Företagsboende i Norrköping</h2>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-600 mb-6">
+                    Behöver ditt företag boende för anställda eller konsulter?
+                    Vi erbjuder inflyttningsklara lägenheter med centralt läge, flexibla avtal och enkel administration.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold mb-4">Passar alla typer av företag:</h3>
+                  <ul className="text-gray-600 space-y-2 mb-6">
+                    <li>• Konsultbolag med personal på uppdrag</li>
+                    <li>• Industriföretag med projektanställda</li>
+                    <li>• Mindre företag som vill erbjuda sina medarbetare boende i Norrköping</li>
+                  </ul>
+                  
+                  <p className="text-gray-600">
+                    Söker ditt företag boende i Norrköping för anställda, konsulter eller projektpersonal?
+                    Vi erbjuder moderna företagslägenheter som kombinerar flexibilitet, trygghet och kostnadseffektivitet.
+                    Perfekt för både korta uppdrag och längre projekt – ett smart alternativ till hotell.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:pl-8">
+                <img 
+                  src="/lovable-uploads/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  alt="Modern apartment building in Norrköping" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="mt-12 bg-gray-50 rounded-lg p-8">
             <h2 className="text-2xl font-semibold mb-4">Om Företagshyror</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

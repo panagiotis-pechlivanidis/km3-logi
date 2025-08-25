@@ -69,8 +69,7 @@ const Omoblerad = () => {
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Omöblerad Lägenheter</h1>
             <p className="text-gray-600 text-lg">
-              Discover our selection of private rental apartments in Norrköping. 
-              Perfect for individuals and families looking for quality housing solutions.
+              Vill du skapa ett hem på ditt eget sätt? Våra omöblerade lägenheter i Norrköping ger dig friheten att inreda precis som du vill.
             </p>
           </div>
           
@@ -88,6 +87,38 @@ const Omoblerad = () => {
               />
             ))}
           </div>
+
+          <div className="mt-12 mb-12 bg-gray-50 rounded-lg p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Omöblerade lägenheter i Norrköping</h2>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-600 mb-6">
+                    Vi erbjuder också omöblerade lägenheter i Norrköping för dig som vill ta med dina egna möbler och sätta din egen prägel på bostaden.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold mb-4">Fördelar med omöblerat:</h3>
+                  <ul className="text-gray-600 space-y-2 mb-6">
+                    <li>• Friheten att inreda helt efter egen smak</li>
+                    <li>• Möjlighet att skapa ett mer personligt hem</li>
+                    <li>• Passar bra för dig som redan har möbler</li>
+                  </ul>
+                  
+                  <p className="text-gray-600">
+                    Oavsett om du söker en mindre lägenhet eller något större finns det alternativ som gör att du kan trivas länge i Norrköping.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:pl-8">
+                <img 
+                  src="/lovable-uploads/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  alt="Modern apartment building in Norrköping" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+
           
           <div className="mt-12 bg-gray-50 rounded-lg p-8">
             <h2 className="text-2xl font-semibold mb-4">About Private Rentals</h2>

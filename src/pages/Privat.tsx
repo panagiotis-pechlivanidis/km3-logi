@@ -69,8 +69,7 @@ const Privat = () => {
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Privat Lägenheter</h1>
             <p className="text-gray-600 text-lg">
-              Discover our selection of private rental apartments in Norrköping. 
-              Perfect for individuals and families looking for quality housing solutions.
+              Hos oss hittar du lägenheter i Norrköping som kombinerar komfort, frihet och långsiktighet. Vi vill ge dig mer än bara en bostad – här får du ett hem där du kan trivas och utvecklas.
             </p>
           </div>
           
