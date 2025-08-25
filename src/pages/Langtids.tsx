@@ -67,10 +67,9 @@ const Langtids = () => {
       <main>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">Långtids Lägenheter</h1>
+            <h1 className="text-4xl font-bold mb-4">Långtids / korttidsuthyrning i Norrköping</h1>
             <p className="text-gray-600 text-lg">
-              Discover our selection of private rental apartments in Norrköping. 
-              Perfect for individuals and families looking for quality housing solutions.
+              Oavsett om du behöver en bostad för en kortare period eller under längre tid i Norrköping, har vi flexibla lösningar som passar dig.
             </p>
           </div>
           
@@ -89,25 +88,54 @@ const Langtids = () => {
             ))}
           </div>
           
+          <div className="mt-12 mb-12 bg-gray-50 rounded-lg p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Långtids- och korttidsuthyrning i Norrköping</h2>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-600 mb-6">
+                    Vi erbjuder både korttidsuthyrning och långsiktiga hyresavtal i Norrköping. På så sätt kan vi anpassa boendet efter just dina behov.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold mb-4">Våra två alternativ:</h3>
+                  <ul className="text-gray-600 space-y-2 mb-6">
+                    <li>• Långtidsuthyrning – stabilt och tryggt för dig som söker ett hem under längre tid</li>
+                    <li>• Korttidsboende – perfekt för tillfälliga projekt, studier eller arbete i Norrköping</li>
+                  </ul>
+                  
+                  <p className="text-gray-600">
+                    Oavsett om du planerar att bo i Norrköping i några månader eller flera år kan vi erbjuda en bostad som passar.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:pl-8">
+                <img 
+                  src="/lovable-uploads/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  alt="Modern apartment building in Norrköping" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+          
           <div className="mt-12 bg-gray-50 rounded-lg p-8">
-            <h2 className="text-2xl font-semibold mb-4">About Private Rentals</h2>
+            <h2 className="text-2xl font-semibold mb-4">Om Långtids / korttidsuthyrning uthyrning</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-medium mb-2">What's Included</h3>
+                <h3 className="text-lg font-medium mb-2">Vad som ingår</h3>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• Fully equipped kitchen</li>
-                  <li>• High-speed internet</li>
-                  <li>• Utilities included</li>
-                  <li>• 24/7 maintenance support</li>
+                  <li>• Fullt utrustat kök</li>
+                  <li>• Höghastighetsinternet</li>
+                  <li>• Alla avgifter inkluderade</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-medium mb-2">Requirements</h3>
+                <h3 className="text-lg font-medium mb-2">Krav för hyra</h3>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• Monthly income verification</li>
-                  <li>• Security deposit required</li>
-                  <li>• Minimum 6-month lease</li>
-                  <li>• References required</li>
+                  <li>• Verifiering av månadsinkomst</li>
+                  <li>• Depositionsavgift krävs</li>
+                  <li>• Minst 6 månaders hyresavtal</li>
+                  <li>• Referenser krävs</li>
                 </ul>
               </div>
             </div>
