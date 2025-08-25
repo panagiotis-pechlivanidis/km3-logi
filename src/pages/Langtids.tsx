@@ -140,6 +140,18 @@ const Langtids = () => {
               </div>
             </div>
           </div>
+          <div className="mt-12 bg-primary text-primary-foreground rounded-lg p-8 text-center">
+            <h2 className="text-2xl font-bold mb-4">Redo att hitta ditt nya hem?</h2>
+            <p className="text-lg mb-6 opacity-90">
+              Kontakta oss idag för att diskutera dina behov och hitta den perfekta lägenheten för dig.
+            </p>
+            <a 
+              href="/contact" 
+              className="inline-flex items-center justify-center px-8 py-3 bg-background text-foreground font-medium rounded-md hover:bg-background/90 transition-colors"
+            >
+              Kontakta oss nu
+            </a>
+          </div>
         </div>
       </main>
 
