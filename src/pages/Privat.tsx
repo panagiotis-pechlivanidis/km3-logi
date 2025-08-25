@@ -98,7 +98,6 @@ const Privat = () => {
                   <li>• Fully equipped kitchen</li>
                   <li>• High-speed internet</li>
                   <li>• Utilities included</li>
-                  <li>• 24/7 maintenance support</li>
                 </ul>
               </div>
               <div>
