@@ -90,25 +90,36 @@ const Privat = () => {
           </div>
           
           <div className="mt-12 mb-12 bg-gray-50 rounded-lg p-8">
-            <h2 className="text-3xl font-bold mb-6">Våra lägenheter i Norrköping</h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="text-gray-600 mb-6">
-                Vi erbjuder privata lägenheter i Norrköping för dig som söker ett hem med både trygghet och frihet. 
-                Alla våra bostäder är utformade för att ge dig hög trivsel och en vardag som fungerar i längden.
-              </p>
-              
-              <h3 className="text-xl font-semibold mb-4">När du hyr en lägenhet hos oss får du alltid:</h3>
-              <ul className="text-gray-600 space-y-2 mb-6">
-                <li>• Egen bostad med kök, badrum och vardagsrum</li>
-                <li>• En lugn och trygg boendemiljö</li>
-                <li>• Flexibla alternativ som passar studenter, yrkesarbetande och familjer</li>
-              </ul>
-              
-              <p className="text-gray-600">
-                Oavsett om du behöver en mindre lägenhet för studier eller en större bostad för hela familjen, 
-                har vi alternativ som matchar dina behov. Våra lägenheter i Norrköping är välbelägna med närhet 
-                till service, grönområden och bra kommunikationer – perfekt för att skapa en vardag som passar just dig.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Våra lägenheter i Norrköping</h2>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-600 mb-6">
+                    Vi erbjuder privata lägenheter i Norrköping för dig som söker ett hem med både trygghet och frihet. 
+                    Alla våra bostäder är utformade för att ge dig hög trivsel och en vardag som fungerar i längden.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold mb-4">När du hyr en lägenhet hos oss får du alltid:</h3>
+                  <ul className="text-gray-600 space-y-2 mb-6">
+                    <li>• Egen bostad med kök, badrum och vardagsrum</li>
+                    <li>• En lugn och trygg boendemiljö</li>
+                    <li>• Flexibla alternativ som passar studenter, yrkesarbetande och familjer</li>
+                  </ul>
+                  
+                  <p className="text-gray-600">
+                    Oavsett om du behöver en mindre lägenhet för studier eller en större bostad för hela familjen, 
+                    har vi alternativ som matchar dina behov. Våra lägenheter i Norrköping är välbelägna med närhet 
+                    till service, grönområden och bra kommunikationer – perfekt för att skapa en vardag som passar just dig.
+                  </p>
+                </div>
+              </div>
+              <div className="lg:pl-8">
+                <img 
+                  src="/lovable-uploads/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  alt="Modern apartment building in Norrköping" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
             </div>
           </div>
           
