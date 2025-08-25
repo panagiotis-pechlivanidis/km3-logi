@@ -89,7 +89,7 @@ const Privat = () => {
             ))}
           </div>
           
-          <div className="mt-12 mb-12">
+          <div className="mt-12 mb-12 bg-gray-50 rounded-lg p-8">
             <h2 className="text-3xl font-bold mb-6">Våra lägenheter i Norrköping</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-600 mb-6">
