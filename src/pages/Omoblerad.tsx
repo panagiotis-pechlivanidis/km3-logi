@@ -90,24 +90,24 @@ const Omoblerad = () => {
           </div>
           
           <div className="mt-12 bg-gray-50 rounded-lg p-8">
-            <h2 className="text-2xl font-semibold mb-4">About Private Rentals</h2>
+            <h2 className="text-2xl font-semibold mb-4">Om privat uthyrning</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-medium mb-2">What's Included</h3>
+                <h3 className="text-lg font-medium mb-2">Vad som ingår</h3>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• Fully equipped kitchen</li>
-                  <li>• High-speed internet</li>
-                  <li>• Utilities included</li>
-                  <li>• 24/7 maintenance support</li>
+                  <li>• Fullt utrustat kök</li>
+                  <li>• Höghastighetsinternet</li>
+                  <li>• Alla avgifter inkluderade</li>
+                  <li>• 24/7 underhållssupport</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-medium mb-2">Requirements</h3>
+                <h3 className="text-lg font-medium mb-2">Krav för hyra</h3>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• Monthly income verification</li>
-                  <li>• Security deposit required</li>
-                  <li>• Minimum 6-month lease</li>
-                  <li>• References required</li>
+                  <li>• Verifiering av månadsinkomst</li>
+                  <li>• Depositionsavgift krävs</li>
+                  <li>• Minst 6 månaders hyresavtal</li>
+                  <li>• Referenser krävs</li>
                 </ul>
               </div>
             </div>
