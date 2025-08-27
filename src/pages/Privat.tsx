@@ -14,11 +14,11 @@ const Privat = () => {
       beds: 1,
       baths: 1,
       sqft: 45,
-      image: "/public/images/apt_6390ada7ecb67.avif",
+      image: new URL('../images/apt_6390ada7ecb67.avif', import.meta.url).href,
       images: [
-        "/public/images/apt_6390ada7ecb67.avif",
-        "/public/images/apt_6390aeb36fc9b.avif",
-        "/public/images/apt_6390aefb2971b.avif",
+        new URL('../images/apt_6390ada7ecb67.avif', import.meta.url).href,
+        new URL('../images/apt_6390aeb36fc9b.avif', import.meta.url).href,
+        new URL('../images/apt_6390aefb2971b.avif', import.meta.url).href,
       ]
     },
     {
@@ -114,7 +114,7 @@ const Privat = () => {
               </div>
               <div className="lg:pl-8">
                 <img 
-                  src="/images/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  src={new URL('../images/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png', import.meta.url).href} 
                   alt="Modern apartment building in Norrköping" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />

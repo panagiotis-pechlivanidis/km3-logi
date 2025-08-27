@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Building2, Home, Building, Users, Briefcase, MapPin, Calendar, Sofa } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroImage from '../../public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png';
 
 const apartmentCategories = [
   {
@@ -40,7 +41,7 @@ const Index = () => {
           {/* Background image */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png')` }}
+            style={{ backgroundImage: `url(${heroImage})` }}
           ></div>
           
           {/* Navigation overlay on the left */}
@@ -200,7 +201,7 @@ const Index = () => {
               </div>
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-              <p>© {new Date().getFullYear()} KM3 Logi. All rights reserved.</p>
+              <p> {new Date().getFullYear()} KM3 Logi. All rights reserved.</p>
             </div>
           </div>
         </footer>
