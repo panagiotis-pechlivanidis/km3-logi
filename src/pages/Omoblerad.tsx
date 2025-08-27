@@ -111,7 +111,7 @@ const Omoblerad = () => {
               </div>
               <div className="lg:pl-8">
                 <img 
-                  src="/lovable-uploads/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  src="/images/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png"  
                   alt="Modern apartment building in Norrköping" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
