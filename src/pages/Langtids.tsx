@@ -14,11 +14,11 @@ const Langtids = () => {
       beds: 1,
       baths: 1,
       sqft: 45,
-      image: "/public/images/apt_6390ada7ecb67.avif",
+      image: new URL('../public/images/apt_6390ada7ecb67.avif', import.meta.url).href,
       images: [
-        "/public/images/apt_6390ada7ecb67.avif",
-        "/public/images/apt_6390aeb36fc9b.avif",
-        "/public/images/apt_6390aefb2971b.avif",
+        new URL('../public/images/apt_6390ada7ecb67.avif', import.meta.url).href,
+        new URL('../public/images/apt_6390aeb36fc9b.avif', import.meta.url).href,
+        new URL('../public/images/apt_6390aefb2971b.avif', import.meta.url).href,
       ]
     },
     {
@@ -27,12 +27,11 @@ const Langtids = () => {
       beds: 2,
       baths: 1,
       sqft: 65,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+      image: "/images/apt_6390ada7ecb67.avif",
       images: [
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+        "/images/apt_6390ada7ecb67.avif",
+        "/images/apt_6390aeb36fc9b.avif",
+        "/images/apt_6390aefb2971b.avif"
       ]
     },
     {
@@ -110,7 +109,7 @@ const Langtids = () => {
               </div>
               <div className="lg:pl-8">
                 <img 
-                  src="/images/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
+                  src={new URL('../public/images/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png', import.meta.url).href} 
                   alt="Modern apartment building in Norrköping" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
