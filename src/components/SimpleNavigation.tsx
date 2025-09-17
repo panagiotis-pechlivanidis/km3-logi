@@ -1,5 +1,4 @@
 import React from "react";
-import { Building2, Home, Building, Briefcase, MapPin, Calendar, Sofa } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -7,27 +6,22 @@ const apartmentCategories = [
   {
     title: "Privat",
     url: "/private",
-    icon: Home,
   },
   {
     title: "Företag",
     url: "/business",
-    icon: Briefcase,
   },
   {
     title: "Möblerad",
     url: "/furnished",
-    icon: Sofa,
   },
   {
     title: "Omöblerad",
     url: "/unfurnished",
-    icon: Building,
   },
   {
     title: "Långtids / Korttids",
     url: "/rental-terms",
-    icon: Calendar,
   },
 ];
 
@@ -50,7 +44,6 @@ const SimpleNavigation = () => {
                 to={item.url}
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
               >
-                <item.icon className="h-4 w-4 mr-2" />
                 <span className="text-sm font-medium">{item.title}</span>
               </Link>
             ))}
