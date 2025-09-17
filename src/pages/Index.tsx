@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2, Home, Building, Users, Briefcase, MapPin, Calendar, Sofa } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from '../../public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png';
 
@@ -8,27 +8,22 @@ const apartmentCategories = [
   {
     title: "Privat",
     url: "/private",
-    icon: Home,
   },
   {
     title: "Företag",
     url: "/business",
-    icon: Briefcase,
   },
   {
     title: "Möblerad",
     url: "/furnished",
-    icon: Sofa,
   },
   {
     title: "Omöblerad",
     url: "/unfurnished",
-    icon: Building,
   },
   {
     title: "Långtids / Korttids",
     url: "/rental-terms",
-    icon: Calendar,
   },
 ];
 
@@ -63,7 +58,6 @@ const Index = () => {
                   to={item.url}
                   className="flex items-center text-white hover:text-white/80 transition-colors duration-200 text-lg font-medium"
                 >
-                  <item.icon className="h-5 w-5 mr-3" />
                   <span>{item.title}</span>
                 </Link>
               ))}
