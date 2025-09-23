@@ -14,14 +14,6 @@ const apartmentCategories = [
     url: "/business",
   },
   {
-    title: "Möblerad",
-    url: "/furnished",
-  },
-  {
-    title: "Omöblerad",
-    url: "/unfurnished",
-  },
-  {
     title: "Långtids / Korttids",
     url: "/rental-terms",
   },
@@ -45,7 +37,8 @@ const Index = () => {
               <Link to="/" className="flex items-center mb-2">
                 <div>
                   <div className="text-lg font-bold text-white">KM3 Logi</div>
-                  <div className="text-sm text-white/80">UTHYRNING AV LÄGENHETER</div>
+                  <div className="text-sm text-white/80"><strong>UTHYRNING AV LÄGENHETER </strong></div>
+                  <div className="text-sm text-white/80"><strong>I NORRKÖPING</strong></div>
                 </div>
               </Link>
             </div>
@@ -65,10 +58,9 @@ const Index = () => {
             
             <div className="mt-12 pt-8 border-t border-white/20">
               <div className="text-sm text-white/80 flex items-start">
-                <MapPin className="h-4 w-4 mt-0.5 mr-2 flex-shrink-0" />
                 <div>
-                  <div>Koppargatan 3</div>
-                  <div>Norrköping</div>
+                  <div><strong>Koppargatan 3,</strong> </div>
+                  <div><strong>602 23 Norrköping</strong></div>
                 </div>
               </div>
             </div>
@@ -87,71 +79,16 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Featured Apartments */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Featured Apartments</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Apartment 1 */}
-              <div className="group cursor-pointer">
-                <div className="overflow-hidden rounded-lg mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-                    alt="Luxury Downtown Loft" 
-                    className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Luxury Downtown Loft</h3>
-                <p className="text-lg font-bold text-blue-600 mb-2">$2,500/month</p>
-                <p className="text-gray-600">2 Beds • 2 Baths • 1,200 sqft</p>
-              </div>
-              
-              {/* Apartment 2 */}
-              <div className="group cursor-pointer">
-                <div className="overflow-hidden rounded-lg mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-                    alt="Modern City View Apartment" 
-                    className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Modern City View Apartment</h3>
-                <p className="text-lg font-bold text-blue-600 mb-2">$3,200/month</p>
-                <p className="text-gray-600">3 Beds • 2 Baths • 1,500 sqft</p>
-              </div>
-              
-              {/* Apartment 3 */}
-              <div className="group cursor-pointer">
-                <div className="overflow-hidden rounded-lg mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                    alt="Riverside Studio" 
-                    className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Riverside Studio</h3>
-                <p className="text-lg font-bold text-blue-600 mb-2">$1,800/month</p>
-                <p className="text-gray-600">1 Bed • 1 Bath • 800 sqft</p>
-              </div>
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                View All Properties <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-        </section>
+        
         
         {/* Info Sections */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="flex flex-col justify-center">
-                <h2 className="text-3xl font-bold mb-6">About KM3 Logi </h2>
+                <h2 className="text-3xl font-bold mb-6">Om KM3 Logi </h2>
                 <p className="text-gray-700 mb-6">
-                  Vi har företagslägenheter för uthyrning, de är fullt möblerade och redo att användas direkt.
+                Km3 har varit verksamma i norrköping sedan 2002. Vi har företagslägenheter för uthyrning, de är fullt möblerade och redo att användas direkt.
                 </p>
                 <p className="text-gray-700 mb-6">
                   Du som kund kan hyra hos oss den perioden som passar dig, det kan vara kortare visiter eller längre perioder.
@@ -188,7 +125,7 @@ const Index = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
                 <address className="text-gray-400 not-italic">
-                  Koppargatan 3, 602 23 Norrköping<br />
+                  <strong>Koppargatan 3, 602 23 Norrköping</strong><br />
                   caroline@km3logi.se<br />
                   073-812 23 33<br />
                 </address>

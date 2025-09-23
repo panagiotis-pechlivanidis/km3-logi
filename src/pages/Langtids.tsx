@@ -135,6 +135,8 @@ const Langtids = () => {
                   <li>• Depositionsavgift krävs</li>
                   <li>• Minst 6 månaders hyresavtal</li>
                   <li>• Referenser krävs</li>
+                  <li>• Inflyttningsdatum/behov</li>
+                  <li>• Arbetsgivarintyg eller studieintyg</li>
                 </ul>
               </div>
             </div>

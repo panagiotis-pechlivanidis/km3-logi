@@ -128,7 +128,7 @@ const Privat = () => {
               <div>
                 <h3 className="text-lg font-medium mb-2">Vad som ingår</h3>
                 <ul className="text-gray-600 space-y-1">
-                  <li>• Fullt utrustat kök</li>
+                  <li>• Kök och badrum</li>
                   <li>• Höghastighetsinternet</li>
                   <li>• Alla avgifter inkluderade</li>
                 </ul>
@@ -140,6 +140,8 @@ const Privat = () => {
                   <li>• Depositionsavgift krävs</li>
                   <li>• Minst 6 månaders hyresavtal</li>
                   <li>• Referenser krävs</li>
+                  <li>• Inga betalningsanmärkningar accepteras</li>
+                  <li>• Eventuell borgensman kan godkännas</li>
                 </ul>
               </div>
             </div>

@@ -143,7 +143,8 @@ const Foretag = () => {
                   <li>• Registrerat företag krävs</li>
                   <li>• Organisations-/företagsnummer</li>
                   <li>• Minimum 1 månads hyra</li>
-                  <li>• Företagsreferenser</li>
+                  <li>• Företagsuthyrning (lokaler/boende):</li>
+                  <li>• Minimum 10 dagars hyresperiod.</li>
                 </ul>
               </div>
             </div>

@@ -143,6 +143,30 @@ const Contact = () => {
               </CardContent>
             </Card>
           </div>
+          <Card className="mt-8">
+            <CardHeader>
+              <h2 className="text-2xl font-semibold">Ansökningsprocess:</h2>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Snabbare handläggning om ni anger:</h3>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Budget</li>
+                    <li>Inflyttningsdatum/behov</li>
+                    <li>Arbetsgivarintyg eller studieintyg</li>
+                    <li>Önskad bostadsstorlek</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-3">Företagsuthyrning (lokaler/boende):</h3>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Minimum 10 dagars hyresperiod</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </main>
     </div>

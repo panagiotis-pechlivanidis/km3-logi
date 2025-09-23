@@ -12,14 +12,6 @@ const apartmentCategories = [
     url: "/business",
   },
   {
-    title: "Möblerad",
-    url: "/furnished",
-  },
-  {
-    title: "Omöblerad",
-    url: "/unfurnished",
-  },
-  {
     title: "Långtids / Korttids",
     url: "/rental-terms",
   },

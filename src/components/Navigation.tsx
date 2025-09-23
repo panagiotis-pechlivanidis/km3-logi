@@ -26,16 +26,6 @@ const apartmentCategories = [
     icon: Briefcase,
   },
   {
-    title: "Möblerad",
-    url: "/furnished",
-    icon: Sofa,
-  },
-  {
-    title: "Omöblerad",
-    url: "/unfurnished",
-    icon: Building,
-  },
-  {
     title: "Långtids / Korttids",
     url: "/rental-terms",
     icon: Calendar,
