@@ -9,44 +9,44 @@ const Privat = () => {
 
   const privateApartments = [
     {
-      title: "Cozy Downtown Studio",
+      title: "2 rok 68 kvm vinsvåning eneby",
       price: "8,500 kr/month",
       beds: 1,
       baths: 1,
-      sqft: 45,
-      image: "/images/apt_6390ada7ecb67.avif",
+      sqft: 68,
+      image: "/images/WhatsApp Image 2025-10-11 at 23.32.04_d605986b.jpg",
       images: [
-        "/images/apt_6390ada7ecb67.avif",
-        "/images/apt_6390aeb36fc9b.avif",
-        "/images/apt_6390aefb2971b.avif"
+        "/images/WhatsApp Image 2025-10-11 at 23.32.04_d605986b.jpg",
+        "/images/WhatsApp Image 2025-10-11 at 23.32.04_9dbb8874.jpg",
+        "/images/WhatsApp Image 2025-10-11 at 23.32.04_12c2fd56.jpg",
+        "/images/WhatsApp Image 2025-10-11 at 23.32.04_c6e41f11.jpg",
+        "/images/WhatsApp Image 2025-10-11 at 23.32.05_3911a210.jpg"
+        
   ]
     },
     {
-      title: "Modern City Apartment",
+      title: "2 rok 35 kvm med balkong",
       price: "12,000 kr/month", 
-      beds: 2,
+      beds: 1,
       baths: 1,
-      sqft: 65,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+      sqft: 35,
+      image: "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg",
       images: [
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+        "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg"
+       
       ]
     },
     {
-      title: "Bright Central Flat",
+      title: "1rok 26kvm i haga",
       price: "10,500 kr/month",
-      beds: 2,
-      baths: 2,
-      sqft: 55,
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840",
+      beds: 1,
+      baths: 1,
+      sqft: 26,
+      image: "/images/WhatsApp Image 2025-10-11 at 23.32.05_61bebbc7.jpg",
       images: [
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+        "/images/WhatsApp Image 2025-10-11 at 23.32.05_61bebbc7.jpg",
+        "/images/WhatsApp Image 2025-10-11 at 23.32.05_3a921809.jpg",
+        "/images/WhatsApp Image 2025-10-11 at 23.32.05_f50f626a.jpg"
       ]
     },
   ];
