@@ -13,7 +13,7 @@ const Omoblerad = () => {
       price: "8,500 kr/month",
       beds: 1,
       baths: 1,
-      sqft: 45,
+      kvm: 45,
       image: "/images/apt_6390ada7ecb67.avif",
       images: [
         "/images/apt_6390ada7ecb67.avif",
@@ -26,7 +26,7 @@ const Omoblerad = () => {
       price: "12,000 kr/month", 
       beds: 2,
       baths: 1,
-      sqft: 65,
+      kvm: 65,
       image: "/images/apt_6390ada7ecb67.avif",
       images: [
         "/images/apt_6390ada7ecb67.avif",
@@ -39,7 +39,7 @@ const Omoblerad = () => {
       price: "10,500 kr/month",
       beds: 2,
       baths: 2,
-      sqft: 55,
+      kvm: 55,
       image: "https://images.unsplash.com/photo-1524230572899-a752b3835840",
       images: [
         "https://images.unsplash.com/photo-1524230572899-a752b3835840",
@@ -80,7 +80,7 @@ const Omoblerad = () => {
                 price={apartment.price}
                 beds={apartment.beds}
                 baths={apartment.baths}
-                sqft={apartment.sqft}
+                kvm={apartment.kvm}
                 image={apartment.image}
                 onClick={() => handleApartmentClick(apartment)}
               />

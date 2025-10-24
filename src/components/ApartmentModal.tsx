@@ -22,7 +22,7 @@ interface ApartmentModalProps {
     price: string;
     beds: number;
     baths: number;
-    sqft: number;
+    kvm: number;
     images: string[];
   } | null;
 }
@@ -77,8 +77,8 @@ const ApartmentModal = ({ isOpen, onClose, apartment }: ApartmentModalProps) => 
                   <span>{apartment.baths}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Square Feet:</span>
-                  <span>{apartment.sqft} sqft</span>
+                  <span className="text-gray-600">Area:</span>
+                  <span>{apartment.kvm} kvm</span>
                 </div>
               </div>
             </div>

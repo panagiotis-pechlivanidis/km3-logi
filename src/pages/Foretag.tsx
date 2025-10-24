@@ -9,48 +9,8 @@ const Foretag = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const businessApartments = [
-    {
-      title: "Executive Business Suite",
-      price: "25,000 kr/month",
-      beds: 2,
-      baths: 2,
-      sqft: 85,
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-      images: [
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840"
-      ]
-    },
-    {
-      title: "Corporate Downtown Office",
-      price: "18,500 kr/month", 
-      beds: 1,
-      baths: 1,
-      sqft: 65,
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      images: [
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511"
-      ]
-    },
-    {
-      title: "Premium Business Center",
-      price: "32,000 kr/month",
-      beds: 3,
-      baths: 2,
-      sqft: 110,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-      images: [
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
-      ]
-    },
+    
+    
   ];
 
   const handleApartmentClick = (apartment: any) => {
@@ -84,7 +44,7 @@ const Foretag = () => {
                 price={apartment.price}
                 beds={apartment.beds}
                 baths={apartment.baths}
-                sqft={apartment.sqft}
+                kvm={apartment.kvm}
                 image={apartment.image}
                 onClick={() => handleApartmentClick(apartment)}
               />
@@ -152,7 +112,8 @@ const Foretag = () => {
           <div className="mt-12 bg-primary text-primary-foreground rounded-lg p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">Redo att hitta ditt nya hem?</h2>
             <p className="text-lg mb-6 opacity-90">
-              Kontakta oss idag för att diskutera dina behov och hitta den perfekta lägenheten för dig.
+              
+              Om du är ett företag och letar efter redan möblerade lägenheter så kan ni kontaka oss direkt på : 07-123215126.
             </p>
             <a 
               href="/contact" 

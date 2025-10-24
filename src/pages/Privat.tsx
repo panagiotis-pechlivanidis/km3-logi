@@ -10,10 +10,10 @@ const Privat = () => {
   const privateApartments = [
     {
       title: "2 rok 68 kvm vinsvåning eneby",
-      price: "8,500 kr/month",
+      price: "7,200 kr/månad",
       beds: 1,
       baths: 1,
-      sqft: 68,
+      kvm: 68,
       image: "/images/WhatsApp Image 2025-10-11 at 23.32.04_d605986b.jpg",
       images: [
         "/images/WhatsApp Image 2025-10-11 at 23.32.04_d605986b.jpg",
@@ -26,10 +26,10 @@ const Privat = () => {
     },
     {
       title: "2 rok 35 kvm med balkong",
-      price: "12,000 kr/month", 
+      price: "6948 kr/månad", 
       beds: 1,
       baths: 1,
-      sqft: 35,
+      kvm: 35,
       image: "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg",
       images: [
         "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg"
@@ -38,10 +38,10 @@ const Privat = () => {
     },
     {
       title: "1rok 26kvm i haga",
-      price: "10,500 kr/month",
+      price: "4786 kr/månad",
       beds: 1,
       baths: 1,
-      sqft: 26,
+      kvm: 26,
       image: "/images/WhatsApp Image 2025-10-11 at 23.32.05_61bebbc7.jpg",
       images: [
         "/images/WhatsApp Image 2025-10-11 at 23.32.05_61bebbc7.jpg",
@@ -69,7 +69,7 @@ const Privat = () => {
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Privat Lägenheter</h1>
             <p className="text-gray-600 text-lg">
-              Hos oss hittar du lägenheter i Norrköping som kombinerar komfort, frihet och långsiktighet. Vi vill ge dig mer än bara en bostad – här får du ett hem där du kan trivas och utvecklas.
+            Hos oss hittar du lediga lägenheter i Norrköping – praktiska och välskötta hem för dig som vill bo bekvämt och ha nära till det du behöver. Vi hjälper dig att hitta en lägenhet där du trivs, oavsett om du vill bo centralt eller lite lugnare.
             </p>
           </div>
           
@@ -81,7 +81,7 @@ const Privat = () => {
                 price={apartment.price}
                 beds={apartment.beds}
                 baths={apartment.baths}
-                sqft={apartment.sqft}
+                kvm={apartment.kvm}
                 image={apartment.image}
                 onClick={() => handleApartmentClick(apartment)}
               />

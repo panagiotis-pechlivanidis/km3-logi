@@ -6,12 +6,12 @@ interface ApartmentCardProps {
   price: string;
   beds: number;
   baths: number;
-  sqft: number;
+  kvm: number;
   image: string;
   onClick?: () => void;
 }
 
-const ApartmentCard = ({ title, price, beds, baths, sqft, image, onClick }: ApartmentCardProps) => {
+const ApartmentCard = ({ title, price, beds, baths, kvm, image, onClick }: ApartmentCardProps) => {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer" onClick={onClick}>
       <CardHeader className="p-0">
@@ -27,7 +27,7 @@ const ApartmentCard = ({ title, price, beds, baths, sqft, image, onClick }: Apar
         <div className="flex justify-between mt-2 text-gray-600">
           <span>{beds} Beds</span>
           <span>{baths} Baths</span>
-          <span>{sqft} sqft</span>
+          <span>{kvm} kvm</span>
         </div>
       </CardContent>
     </Card>

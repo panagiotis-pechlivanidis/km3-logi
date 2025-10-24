@@ -8,46 +8,7 @@ const Langtids = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const privateApartments = [
-    {
-      title: "Cozy Downtown Studio",
-      price: "8,500 kr/month",
-      beds: 1,
-      baths: 1,
-      sqft: 45,
-      image: "/images/apt_6390ada7ecb67.avif",
-      images: [
-        "/images/apt_6390ada7ecb67.avif",
-        "/images/apt_6390aeb36fc9b.avif",
-        "/images/apt_6390aefb2971b.avif"
-  ]
-    },
-    {
-      title: "Modern City Apartment",
-      price: "12,000 kr/month", 
-      beds: 2,
-      baths: 1,
-      sqft: 65,
-      image: "/images/apt_6390ada7ecb67.avif",
-      images: [
-        "/images/apt_6390ada7ecb67.avif",
-        "/images/apt_6390aeb36fc9b.avif",
-        "/images/apt_6390aefb2971b.avif"
-      ]
-    },
-    {
-      title: "Bright Central Flat",
-      price: "10,500 kr/month",
-      beds: 2,
-      baths: 2,
-      sqft: 55,
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-      images: [
-        "https://images.unsplash.com/photo-1524230572899-a752b3835840",
-        "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-        "https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-      ]
-    },
+    
   ];
 
   const handleApartmentClick = (apartment: any) => {
@@ -80,7 +41,7 @@ const Langtids = () => {
                 price={apartment.price}
                 beds={apartment.beds}
                 baths={apartment.baths}
-                sqft={apartment.sqft}
+                kvm={apartment.kvm}
                 image={apartment.image}
                 onClick={() => handleApartmentClick(apartment)}
               />
