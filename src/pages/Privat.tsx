@@ -32,7 +32,9 @@ const Privat = () => {
       kvm: 35,
       image: "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg",
       images: [
-        "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg"
+        "/images/WhatsApp Image 2025-10-11 at 23.32.04_d962ac04.jpg",
+        "/images/WhatsApp Image 2025-11-04 at 21.10.41_b2154c07.jpg",
+        "/images/WhatsApp Image 2025-11-04 at 21.10.41_eea3dab7.jpg"
        
       ]
     },

@@ -62,18 +62,18 @@ const ApartmentModal = ({ isOpen, onClose, apartment }: ApartmentModalProps) => 
           {/* Apartment Details */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Property Details</h3>
+              <h3 className="text-xl font-semibold mb-4">Fastighetsinformation</h3>
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Price:</span>
+                  <span className="text-gray-600">Pris:</span>
                   <span className="font-bold text-blue-500">{apartment.price}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Bedrooms:</span>
+                  <span className="text-gray-600">Sovrum:</span>
                   <span>{apartment.beds}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-600">Bathrooms:</span>
+                  <span className="text-gray-600">Badrum:</span>
                   <span>{apartment.baths}</span>
                 </div>
                 <div className="flex justify-between">
@@ -83,7 +83,7 @@ const ApartmentModal = ({ isOpen, onClose, apartment }: ApartmentModalProps) => 
               </div>
             </div>
             
-            <div>
+            {/* <div>
               <h3 className="text-xl font-semibold mb-4">Features</h3>
               <ul className="space-y-1 text-gray-600">
                 <li>• Fully equipped kitchen</li>
@@ -93,7 +93,7 @@ const ApartmentModal = ({ isOpen, onClose, apartment }: ApartmentModalProps) => 
                 <li>• Modern appliances</li>
                 <li>• Secure building access</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </DialogContent>

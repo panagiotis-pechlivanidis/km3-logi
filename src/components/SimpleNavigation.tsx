@@ -43,7 +43,7 @@ const SimpleNavigation = () => {
           
           <div className="flex items-center space-x-4">
             <Link to="/contact">
-              <Button variant="outline" size="sm">Contact</Button>
+              <Button variant="outline" size="sm">Kontakt</Button>
             </Link>
           </div>
         </div>
