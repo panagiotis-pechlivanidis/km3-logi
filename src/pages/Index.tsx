@@ -6,7 +6,7 @@ import heroImage from '../../public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.
 
 const apartmentCategories = [
   {
-    title: "Privat",
+    title: "Lediga",
     url: "/private",
   },
   {
@@ -89,10 +89,7 @@ const Index = () => {
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6">Om KM3 Logi </h2>
                 <p className="text-gray-700 mb-6">
-                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi har företagslägenheter för uthyrning, de är fullt möblerade och redo att användas direkt.
-                </p>
-                <p className="text-gray-700 mb-6">
-                  Du som kund kan hyra hos oss den perioden som passar dig, det kan vara kortare visiter eller längre perioder.
+                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar circa 205 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag circa 20 möblerade företags långtidslägehenter
                 </p>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">

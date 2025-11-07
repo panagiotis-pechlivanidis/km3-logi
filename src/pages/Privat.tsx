@@ -69,9 +69,9 @@ const Privat = () => {
       <main>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">Privat Lägenheter</h1>
+            <h1 className="text-4xl font-bold mb-4">Lediga Lägenheter</h1>
             <p className="text-gray-600 text-lg">
-            Hos oss hittar du lediga lägenheter i Norrköping – praktiska och välskötta hem för dig som vill bo bekvämt och ha nära till det du behöver. Vi hjälper dig att hitta en lägenhet där du trivs, oavsett om du vill bo centralt eller lite lugnare.
+            Hos oss hittar du lediga lägenheter i Norrköping – praktiska och välplanerade hem för dig som vill bo bekvämt och ha nära till det du behöver. Vi hjälper dig att hitta en lägenhet där du trivs, oavsett om du vill bo centralt eller lite lugnare.
             </p>
           </div>
           
@@ -96,11 +96,10 @@ const Privat = () => {
                 <h2 className="text-3xl font-bold mb-6">Våra lägenheter i Norrköping</h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-600 mb-6">
-                    Vi erbjuder privata lägenheter i Norrköping för dig som söker ett hem med både trygghet och frihet. 
-                    Alla våra bostäder är utformade för att ge dig hög trivsel och en vardag som fungerar i längden.
+                  Hos oss hittar du lediga lägenheter i Norrköping – praktiska och välplanerade hem för dig som vill bo bekvämt och ha nära till det du behöver. Vi hjälper dig att hitta en lägenhet där du trivs, oavsett om du vill bo centralt eller lite lugnare.
                   </p>
                   
-                  <h3 className="text-xl font-semibold mb-4">När du hyr en lägenhet hos oss får du alltid:</h3>
+                  {/*<h3 className="text-xl font-semibold mb-4">När du hyr en lägenhet hos oss får du alltid:</h3>
                   <ul className="text-gray-600 space-y-2 mb-6">
                     <li>• Egen bostad med kök, badrum och vardagsrum</li>
                     <li>• En lugn och trygg boendemiljö</li>
@@ -111,7 +110,7 @@ const Privat = () => {
                     Oavsett om du behöver en mindre lägenhet för studier eller en större bostad för hela familjen, 
                     har vi alternativ som matchar dina behov. Våra lägenheter i Norrköping är välbelägna med närhet 
                     till service, grönområden och bra kommunikationer – perfekt för att skapa en vardag som passar just dig.
-                  </p>
+                  </p>*/}
                 </div>
               </div>
               <div className="lg:pl-8">
@@ -128,11 +127,10 @@ const Privat = () => {
             <h2 className="text-2xl font-semibold mb-4">Om privat uthyrning</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-medium mb-2">Vad som ingår</h3>
+                <h3 className="text-lg font-medium mb-2">Vad som finns:</h3>
                 <ul className="text-gray-600 space-y-1">
                   <li>• Kök och badrum</li>
                   <li>• Höghastighetsinternet</li>
-                  <li>• Alla avgifter inkluderade</li>
                 </ul>
               </div>
               <div>
@@ -140,7 +138,6 @@ const Privat = () => {
                 <ul className="text-gray-600 space-y-1">
                   <li>• Verifiering av månadsinkomst</li>
                   <li>• Depositionsavgift krävs</li>
-                  <li>• Minst 6 månaders hyresavtal</li>
                   <li>• Referenser krävs</li>
                   <li>• Inga betalningsanmärkningar accepteras</li>
                   <li>• Eventuell borgensman kan godkännas</li>

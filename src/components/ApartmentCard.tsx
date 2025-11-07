@@ -24,11 +24,6 @@ const ApartmentCard = ({ title, price, beds, baths, kvm, image, onClick }: Apart
       <CardContent className="p-4">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-xl font-bold text-blue-500 mt-2">{price}</p>
-        <div className="flex justify-between mt-2 text-gray-600">
-          <span>{beds} Beds</span>
-          <span>{baths} Baths</span>
-          <span>{kvm} kvm</span>
-        </div>
       </CardContent>
     </Card>
   );

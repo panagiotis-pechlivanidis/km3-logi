@@ -16,7 +16,7 @@ import {
 
 const apartmentCategories = [
   {
-    title: "Privat",
+    title: "Lediga",
     url: "/private",
     icon: Home,
   },
