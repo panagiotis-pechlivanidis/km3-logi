@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SimpleNavigation from "@/components/SimpleNavigation";
 import ApartmentCard from "@/components/ApartmentCard";
 import ApartmentModal from "@/components/ApartmentModal";
@@ -151,12 +152,12 @@ const Privat = () => {
             <p className="text-lg mb-6 opacity-90">
               Kontakta oss idag för att diskutera dina behov och hitta den perfekta lägenheten för dig.
             </p>
-            <a 
-              href="/contact" 
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center px-8 py-3 bg-background text-foreground font-medium rounded-md hover:bg-background/90 transition-colors"
             >
               Kontakta oss nu
-            </a>
+            </Link>
           </div>
         </div>
       </main>
