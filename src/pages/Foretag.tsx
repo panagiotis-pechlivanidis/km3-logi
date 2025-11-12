@@ -29,10 +29,9 @@ const Foretag = () => {
       <main>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">Företag Lägenheter</h1>
+            <h1 className="text-4xl font-bold mb-4">Företagslägenheter i Norrköping</h1>
             <p className="text-gray-600 text-lg">
-              Professionella boendealternativ för företag i Norrköping. 
-              Perfekt för företagsanställda, projektteam och affärsresenärer som behöver kvalitetsboende.
+            Vi erbjuder professionella boendelösningar för företag i Norrköping – perfekt för företagsanställda, projektteam och affärsresenärer som behöver bekväma och välutrustade lägenheter under kortare eller längre perioder. Kontakta oss idag för att hitta rätt boende för ditt företag.
             </p>
           </div>
           

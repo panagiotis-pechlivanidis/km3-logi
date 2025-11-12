@@ -70,9 +70,9 @@ const Privat = () => {
       <main>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-4">Lediga Lägenheter</h1>
+            <h1 className="text-4xl font-bold mb-4">Lediga lägenheter i Norrköping</h1>
             <p className="text-gray-600 text-lg">
-            Hos oss hittar du lediga lägenheter i Norrköping – praktiska och välplanerade hem för dig som vill bo bekvämt och ha nära till det du behöver. Vi hjälper dig att hitta en lägenhet där du trivs, oavsett om du vill bo centralt eller lite lugnare.
+            KM3 Förvaltning hyr ut lägenheter i Norrköping till privatpersoner. Här hittar du lediga lägenheter för dig som vill bo tryggt, bekvämt och långsiktigt. Våra bostäder finns i flera områden – både centralt och i lugna kvarter.Alla lägenheter har eget kök, badrum och snabbt internet. Vi erbjuder bostäder i olika storlekar, från ettor till familjelägenheter.
             </p>
           </div>
           
@@ -97,7 +97,7 @@ const Privat = () => {
                 <h2 className="text-3xl font-bold mb-6">Våra lägenheter i Norrköping</h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-600 mb-6">
-                  Hos oss hittar du lediga lägenheter i Norrköping – praktiska och välplanerade hem för dig som vill bo bekvämt och ha nära till det du behöver. Vi hjälper dig att hitta en lägenhet där du trivs, oavsett om du vill bo centralt eller lite lugnare.
+                  Letar du efter en lägenhet i Norrköping? Hos oss hittar du välplanerade och bekväma hem med närhet till service, grönområden och kommunikationer. Oavsett om du vill bo mitt i stan eller i ett lugnare område hjälper vi dig att hitta en lägenhet som passar din livsstil.
                   </p>
                   
                   {/*<h3 className="text-xl font-semibold mb-4">När du hyr en lägenhet hos oss får du alltid:</h3>
@@ -114,9 +114,9 @@ const Privat = () => {
                   </p>*/}
                 </div>
               </div>
-              <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
+              <div className="w-3/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
                 <img
-                  src="/images/WhatsApp Image 2025-11-12 at 14.26.00_cf360d4b.jpg"
+                  src="\images\nova-Hagagatan-31-A.png"
                   alt="Building exterior"
                   className="w-full h-auto"
                 />
