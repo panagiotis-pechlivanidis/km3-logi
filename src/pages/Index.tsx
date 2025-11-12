@@ -6,7 +6,7 @@ import heroImage from '../../public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.
 
 const apartmentCategories = [
   {
-    title: "Lediga",
+    title: "Privat/Tillsvidare",
     url: "/private",
   },
   {
@@ -92,11 +92,11 @@ const Index = () => {
                 Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar circa 205 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag circa 20 möblerade företags långtidslägehenter
                 </p>
               </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1460574283810-2aab119d8511" 
-                  alt="Building exterior" 
-                  className="w-full h-64 object-cover"
+              <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
+                <img
+                  src="/images/WhatsApp Image 2025-11-12 at 14.26.00_cf360d4b.jpg"
+                  alt="Building exterior"
+                  className="w-full h-auto"
                 />
               </div>
             </div>

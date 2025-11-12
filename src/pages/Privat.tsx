@@ -114,11 +114,11 @@ const Privat = () => {
                   </p>*/}
                 </div>
               </div>
-              <div className="lg:pl-8">
-                <img 
-                  src="/images/e7d81ca5-4d7d-4e65-8934-82402c97fedb.png" 
-                  alt="Modern apartment building in Norrköping" 
-                  className="w-full h-auto rounded-lg shadow-lg"
+              <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
+                <img
+                  src="/images/WhatsApp Image 2025-11-12 at 14.26.00_cf360d4b.jpg"
+                  alt="Building exterior"
+                  className="w-full h-auto"
                 />
               </div>
             </div>

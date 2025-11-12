@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const apartmentCategories = [
   {
-    title: "Lediga",
+    title: "Privat/Tillsvidare",
     url: "/private",
   },
   {
