@@ -5,7 +5,7 @@ import { copyFileSync } from "fs";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-   base: mode === 'production' ? '/km3-logi/' : '/',
+   base: '/',
    
   server: {
     host: "::",

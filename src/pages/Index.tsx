@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from '../../public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png';
+import heroImage from '/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png';
 
 const apartmentCategories = [
   {
@@ -70,7 +70,7 @@ const Index = () => {
           {/* Main hero content */}
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
             <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-1 sm:mb-2 drop-shadow-lg">Km3 förvaltning </h1>
-            <h1 className="hidden sm:block text-1xl sm:text-1xl md:text-1xl lg:text-2xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">Boendelösningar för både privatpersoner och företag. </h1>
+            <h1 className="hidden sm:block text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">Boendelösningar för både privatpersoner och företag. </h1>
             <div className="hidden sm:flex justify-center">
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="text-sm sm:text-base border-white text-white hover:bg-white hover:text-gray-900 bg-white/10 backdrop-blur-sm">
@@ -95,7 +95,7 @@ const Index = () => {
               </div>
               <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
                 <img
-                  src="\images\b82c2a0530921ce6f08be8f51a279f33.png"
+                  src="/images/b82c2a0530921ce6f08be8f51a279f33.png"
                   alt="Building exterior"
                   className="w-full h-auto"
                 />
