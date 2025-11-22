@@ -36,7 +36,7 @@ const Index = () => {
             <div className="mb-8">
               <Link to="/" className="flex items-center mb-2">
                 <div>
-                  <div className="text-lg font-bold text-white">Km3 förvaltning </div>
+                  <div className="text-lg font-bold text-white">Km3 Logi </div>
                   <div className="text-sm text-white/80"><strong>UTHYRNING AV LÄGENHETER </strong></div>
                   <div className="text-sm text-white/80"><strong>I NORRKÖPING</strong></div>
                 </div>
@@ -44,7 +44,7 @@ const Index = () => {
             </div>
             
             <div className="space-y-4">
-              <div className="text-lg font-semibold text-white mb-4">LÄGENHETER</div>
+              <div className="text-lg font-semibold text-white mb-4">LEDIGA LÄGENHETER</div>
               {apartmentCategories.map((item) => (
                 <Link 
                   key={item.title} 
@@ -90,7 +90,7 @@ const Index = () => {
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6">Om KM3 Logi </h2>
                 <p className="text-gray-700 mb-6">
-                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar circa 205 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag circa 20 möblerade företags långtidslägehenter
+                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar cirka 250 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag cirka 20 möblerade företags långtidslägehenter
                 </p>
               </div>
               <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
