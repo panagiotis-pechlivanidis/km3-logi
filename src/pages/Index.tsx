@@ -2,20 +2,19 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from '/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png';
+import heroImage from '../../public/images/ChatGPT_Image_Jul_3_2025_10_55_24_PM.png';
 
 const apartmentCategories = [
   {
-    title: "Privat/Tillsvidare",
+    title: "Privat / Tillsvidare",
     url: "/private",
   },
   {
-    title: "Företag",
+    title: "Företag / Långtids / Korttids",
     url: "/business",
   },
   {
-    title: "Långtids / Korttids",
-    url: "/rental-terms",
+    
   },
 ];
 
@@ -36,7 +35,7 @@ const Index = () => {
             <div className="mb-8">
               <Link to="/" className="flex items-center mb-2">
                 <div>
-                  <div className="text-lg font-bold text-white">Km3 förvaltning </div>
+                  <div className="text-lg font-bold text-white">Km3 Logi </div>
                   <div className="text-sm text-white/80"><strong>UTHYRNING AV LÄGENHETER </strong></div>
                   <div className="text-sm text-white/80"><strong>I NORRKÖPING</strong></div>
                 </div>
@@ -44,7 +43,7 @@ const Index = () => {
             </div>
             
             <div className="space-y-4">
-              <div className="text-lg font-semibold text-white mb-4">LÄGENHETER</div>
+              <div className="text-lg font-semibold text-white mb-4">LEDIGA LÄGENHETER</div>
               {apartmentCategories.map((item) => (
                 <Link 
                   key={item.title} 
@@ -69,8 +68,8 @@ const Index = () => {
           
           {/* Main hero content */}
           <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center relative z-10">
-            <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-1 sm:mb-2 drop-shadow-lg">Km3 förvaltning </h1>
-            <h1 className="hidden sm:block text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">Boendelösningar för både privatpersoner och företag. </h1>
+            <h1 className="hidden sm:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-1 sm:mb-2 drop-shadow-lg">Km3 Logi </h1>
+            <h1 className="hidden sm:block text-1xl sm:text-1xl md:text-1xl lg:text-2xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg"> </h1>
             <div className="hidden sm:flex justify-center">
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="text-sm sm:text-base border-white text-white hover:bg-white hover:text-gray-900 bg-white/10 backdrop-blur-sm">
@@ -90,12 +89,12 @@ const Index = () => {
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6">Om KM3 Logi </h2>
                 <p className="text-gray-700 mb-6">
-                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar circa 205 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag circa 20 möblerade företags långtidslägehenter
+                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar circa 250 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag circa 20 möblerade företags långtidslägenheter
                 </p>
               </div>
               <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">
                 <img
-                  src="/images/b82c2a0530921ce6f08be8f51a279f33.png"
+                  src="\images\b82c2a0530921ce6f08be8f51a279f33.png"
                   alt="Building exterior"
                   className="w-full h-auto"
                 />

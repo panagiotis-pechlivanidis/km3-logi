@@ -128,17 +128,18 @@ const Contact = () => {
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Maila oss</h3>
+                    <h3 className="font-semibold text-gray-900">Maila</h3>
                     <p className="text-gray-600">
                       caroline@km3logi.se
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Ring oss</h3>
+                    <h3 className="font-semibold text-gray-900">Ring eller sms</h3>
                     <p className="text-gray-600">
                       073-812 23 33
                     </p>
                   </div>
+                 
                 </div>
               </CardContent>
             </Card>

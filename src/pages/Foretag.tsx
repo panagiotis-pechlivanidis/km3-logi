@@ -93,7 +93,7 @@ const Foretag = () => {
                   <li>• Fakturering direkt till företag</li>
                   <li>• Flexibla hyresperioder</li>
                   <li>• Konferensrum tillgängligt</li>
-                  <li>• Businesscenter-tjänster</li>
+                  
                 </ul>
               </div>
               <div>
