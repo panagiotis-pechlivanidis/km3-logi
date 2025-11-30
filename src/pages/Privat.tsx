@@ -10,7 +10,7 @@ const Privat = () => {
 
   const privateApartments = [
     {
-      title: "2 rok 68 kvm vinsvåning eneby",
+      title: "2 rok 68 kvm vindsvåning eneby",
       price: "7,200 kr/månad",
       beds: 1,
       baths: 1,
