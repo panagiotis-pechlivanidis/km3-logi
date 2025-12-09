@@ -89,7 +89,7 @@ const Index = () => {
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6">Om KM3 Logi </h2>
                 <p className="text-gray-700 mb-6">
-                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar circa 250 lägenheter samt, ett 20tal företagslägenheter för långtidsuthyrning. Vi har idag circa 20 möblerade företags långtidslägenheter
+                Km3 förvaltning ab har varit verksamma i norrköping sedan 2002. Vi förvaltar 250 lägenheter samt ett 20 tal möblerade företagslägenheter för långtidsuthyrning.
                 </p>
               </div>
               <div className="w-2/3 mx-auto overflow-hidden shadow-lg border border-gray-200">

@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 
 const apartmentCategories = [
   {
-    title: "Privat/Tillsvidare",
+    title: "Privat / Tillsvidare",
     url: "/private",
   },
   {
-    title: "Företag",
+    title: "Företag / Långtids / Korttids",
     url: "/business",
   },
-  {
+  {/*{
     title: "Långtids / Korttids",
     url: "/rental-terms",
-  },
+  },*/}
 ];
 
 const SimpleNavigation = () => {

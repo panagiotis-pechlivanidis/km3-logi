@@ -112,7 +112,7 @@ const Foretag = () => {
             <h2 className="text-2xl font-bold mb-4">Redo att hitta ditt nya hem?</h2>
             <p className="text-lg mb-6 opacity-90">
               
-              Om du är ett företag och letar efter redan möblerade lägenheter så kan ni kontaka oss direkt på : 07-123215126.
+              Om du är ett företag och letar efter redan möblerade lägenheter så kan ni kontaka oss direkt på : 073-812 23 33.
             </p>
             <a 
               href="/contact" 

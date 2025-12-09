@@ -72,7 +72,7 @@ const Privat = () => {
           <div className="mb-8">
             <h1 className="text-4xl font-bold mb-4">Lediga lägenheter i Norrköping</h1>
             <p className="text-gray-600 text-lg">
-            KM3 Förvaltning / Logi hyr ut lägenheter i Norrköping till privatpersoner. Här hittar du lediga lägenheter för dig som vill bo tryggt, bekvämt och långsiktigt. Våra bostäder finns i flera områden – både centralt och i lugna kvarter.Alla lägenheter har eget kök, badrum och snabbt internet. Vi erbjuder bostäder i olika storlekar, från ettor till familjelägenheter.
+            KM3 Förvaltning / Logi hyr ut lägenheter i Norrköping till privatpersoner. Här hittar du lediga lägenheter för dig som vill bo tryggt, bekvämt och långsiktigt. Vi erbjuder bostäder i olika storlekar, från 1 rok till 5 rok.
             </p>
           </div>
           

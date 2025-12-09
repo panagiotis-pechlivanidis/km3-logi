@@ -16,20 +16,20 @@ import {
 
 const apartmentCategories = [
   {
-    title: "Privat/Tillsvidare",
+    title: "Privat / Tillsvidare",
     url: "/private",
     icon: Home,
   },
   {
-    title: "Företag",
+    title: "Företag / Långtids / Korttids",
     url: "/business",
     icon: Briefcase,
   },
-  {
+  {/*{
     title: "Långtids / Korttids",
     url: "/rental-terms",
     icon: Calendar,
-  },
+  },*/}
 ];
 
 const Navigation = () => {
